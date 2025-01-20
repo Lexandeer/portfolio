@@ -1,0 +1,23 @@
+.navbar {
+  text-transform: uppercase;
+  padding: 20px 0;
+  background-color: #43c93e;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 8%;
+  }
+  &__title {
+    padding-right: 8%;
+  }
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+    &-item {
+    }
+  }
+}
