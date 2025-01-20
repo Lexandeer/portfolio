@@ -1,0 +1,15 @@
+.navbar {
+    text-transform: uppercase;
+    
+    &__container {
+
+    }
+    &__menu {
+        display: flex;
+        flex-direction: row;
+
+        &menu-item{
+
+        }
+    }
+}
