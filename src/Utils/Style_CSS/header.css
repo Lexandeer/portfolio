@@ -1,0 +1,20 @@
+.navbar {
+  text-transform: uppercase;
+  padding: 20px 0;
+  background-color: #43c93e;
+}
+.navbar__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8%;
+}
+.navbar__title {
+  padding-right: 8%;
+}
+.navbar__menu {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  list-style-type: none;
+}/*# sourceMappingURL=header.css.map */
