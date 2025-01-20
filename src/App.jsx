@@ -1,10 +1,8 @@
-import './App.css'
-import Header from './component/header.jsx'
+import './App.css';
+import Header from './component/header/Header';
 
 function App() {
-  return (
-    <Header/>
-  )
+  return <Header />;
 }
 
-export default App
+export default App;
