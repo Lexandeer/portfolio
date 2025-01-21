@@ -1,1 +1,37 @@
-/*# sourceMappingURL=Presentation.css.map */
+.intro-wrapper {
+  background-color: #f5f5f5;
+  height: 500px;
+  padding: 60px 0;
+  margin-right: 15%;
+}
+.intro-wrapper__block {
+  padding: 5% 0;
+}
+.intro-wrapper__block__text {
+  color: black;
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 0 20%;
+}
+
+.title-wrapper {
+  position: relative;
+}
+.title-wrapper__title {
+  text-align: center;
+  font-size: 38px;
+  position: relative;
+  z-index: 2;
+}
+.title-wrapper__title--see-through {
+  width: 100%;
+  color: wheat;
+  text-align: center;
+  font-size: 110px;
+  letter-spacing: 2px;
+  opacity: 0.3;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=Presentation.css.map */
