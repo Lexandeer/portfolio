@@ -1,6 +1,7 @@
 import './Projects.scss';
 import { useState } from 'react';
 import ModalProject from '../../component/modal-project/ModalProject';
+import DoubleTitle from '../../component/DoubleTitle/DoubleTitle';
 
 const Projects = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,24 +11,34 @@ const Projects = () => {
   };
 
   return (
-    <section>
-      <h2>Projets</h2>
-      <h3>Découvrez mes créations</h3>
-      <button onClick={toggleModal}>View Project</button>
-      {isModalOpen && (
-        <div className="overlay">
-          <div className="overlay__modal">
-            <button
-              type="button"
-              onClick={toggleModal}
-              className="overlay__modal--close"
-            >
-              close
-            </button>
-            <ModalProject url="https://lexandeer.github.io/Site_Ohmyfood/" />
+    <section className="projects-wrapper">
+      <DoubleTitle
+        primaryTitle={'Projets'}
+        secondaryTitle={'Découvrez mes créations'}
+      />
+      <div>
+        <button
+          type="button"
+          onDoubleClick={toggleModal}
+          className="open-button"
+        >
+          View Project
+        </button>
+        {isModalOpen && (
+          <div className="overlay">
+            <div className="overlay__modal">
+              <button
+                type="button"
+                onClick={toggleModal}
+                className="overlay__modal--close"
+              >
+                close
+              </button>
+              <ModalProject url="https://lexandeer.github.io/Site_Ohmyfood/" />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </section>
   );
 };
