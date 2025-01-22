@@ -1,35 +1,26 @@
 import './Presentation.scss';
+import DoubleTitle from '../../component/DoubleTitle/DoubleTitle';
 
 const Presentation = () => {
   return (
     <section className="intro-wrapper">
+      <DoubleTitle
+        primaryTitle={'Présentation'}
+        secondaryTitle={'À propos de moi'}
+      />
       <article>
-        <div className="title-wrapper">
-          <h2 className="title-wrapper__title">Présentation</h2>
-          <h3 className="title-wrapper__title--see-through">À propos de moi</h3>
-        </div>
         <div className="intro-wrapper__block">
           <p className="intro-wrapper__block__text">
-            <strong>
-              Actuellement en fin de formation chez OpenClassrooms
-            </strong>{' '}
-            en tant que développeur front-end, j&#39;ai acquis une solide
-            maîtrise des technologies essentielles du web, notamment{' '}
-            <strong>HTML, CSS, JavaScript</strong>, et des frameworks modernes
-            comme <strong>React</strong>. Tout au long de mon parcours, j&#39;ai
-            mené à bien plusieurs projets pratiques, ce qui m&#39;a permis de
-            développer mes compétences techniques tout en appliquant les bonnes
-            pratiques en matière de responsive design, d&#39;accessibilité, et
-            d&#39;optimisation des performances.
-          </p>
-          <br />
-          <p className="intro-wrapper__block__text">
-            <strong>Passionné par le développement</strong> d&#39;interfaces
-            utilisateurs intuitives et dynamiques, je suis motivé par l&#39;idée
-            de transformer des idées en expériences web engageantes. Prêt à
-            relever de nouveaux défis, je suis{' '}
-            <strong>enthousiaste à l&#39;idée de continuer à apprendre</strong>
-            et de contribuer à des projets innovants.
+            <strong>En fin de formation en développement front-end</strong> chez
+            OpenClassrooms, j&apos;ai acquis des compétences solides en{' '}
+            <strong>React, HTML, CSS</strong> et <strong>JavaScript</strong>.
+            <br />
+            Passionné par la création d&apos;interfaces modernes et intuitives,
+            j&apos;ai mené plusieurs projets pratiques axés sur
+            l&apos;expérience utilisateur et les performances web.
+            <br />
+            Curieux et motivé, je suis prêt à transformer cette passion en une
+            carrière enrichissante.
           </p>
         </div>
       </article>
