@@ -1,12 +1,14 @@
 import './App.css';
-import Header from './component/header/Header';
-import Presentation from './component/presentation/Presentation';
+import Navbar from './component/Navbar/Navbar';
+import Presentation from './sections/presentation/Presentation';
+import Projects from './sections/projects/Projects';
 
 function App() {
   return (
     <>
-      <Header />
+      <Navbar />
       <Presentation />
+      <Projects />
     </>
   );
 }
