@@ -1,27 +1,25 @@
 @use '../../assets/variables';
 
-.intro-wrapper {
+.intro {
   background-color: variables.$secondary-color;
 
   padding: 80px 0 60px 0;
   margin-bottom: 60px;
-
-  &__block {
-    padding: 8% 0;
-    &__text {
-      color: variables.$text-color;
-      line-height: 1.6;
-      font-size: 24px;
-      padding: 0 20%;
-      text-align: center;
-      font-family: 'Poppins', sans-serif;
+  &__presentation {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__block {
+      padding: 8% 0;
+      &__text {
+        color: variables.$text-color;
+        line-height: 1.6;
+        font-size: 24px;
+        padding: 0 20%;
+        text-align: center;
+        font-family: 'Poppins', sans-serif;
+      }
     }
   }
-}
-
-article {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
