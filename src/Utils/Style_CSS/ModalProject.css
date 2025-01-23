@@ -1,4 +1,136 @@
-.wrapper {
-  width: 500px;
-  height: 300px;
+.project {
+  position: relative;
+  height: 600px;
+  margin: 10% 15% 10% 15%;
+}
+.project__button--open {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.project__button--close {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 14px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+.project__button--close:hover {
+  background-color: #5b5963;
+}
+.project__img-container {
+  width: 100%;
+  height: 100%;
+}
+.project__img-container__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.project__img-container__text-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 8px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease;
+}
+.project__img-container__text-holder__text {
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  padding: 0 0 40px 40px;
+}
+.project__img-container__text-holder__text--hidden {
+  font-size: 58px;
+}
+.project__img-container__text-holder--hovered {
+  opacity: 0;
+}
+.project__tags-buttton {
+  margin-top: 20px;
+}
+.project__tags-buttton__button {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 20px;
+  background-color: black;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease;
+  color: white;
+  margin-right: 20px;
+}
+.project__tags-buttton__button:hover {
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.modal-overlay__modal {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: fadeIn 0.3s ease-out;
+  width: 60%;
+  height: 70%;
+}
+.modal-overlay__modal__content {
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.github-button {
+  text-decoration: none;
+  color: inherit;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }/*# sourceMappingURL=ModalProject.css.map */

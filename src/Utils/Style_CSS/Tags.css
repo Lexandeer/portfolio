@@ -1,0 +1,14 @@
+.tags {
+  user-select: none;
+  padding: 8px 30px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+  margin-right: 20px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s ease;
+  font-size: 20px;
+  font-weight: 600;
+}
+.tags:hover {
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
+}/*# sourceMappingURL=Tags.css.map */

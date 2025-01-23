@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"Projects.css"}
+{"version":3,"sourceRoot":"","sources":["../../sections/projects/Projects.scss","../../assets/variables.scss"],"names":[],"mappings":"AAEA;EACE,kBCHc","file":"Projects.css"}

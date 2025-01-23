@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.wrapper__title {
+  text-align: center;
+  font-size: 58px;
+  position: relative;
+  z-index: 2;
+}
+.wrapper__title--see-through {
+  width: 100%;
+  color: wheat;
+  text-align: center;
+  font-size: 110px;
+  letter-spacing: 2px;
+  opacity: 0.3;
+  position: absolute;
+  font-weight: 700;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.wrapper__title--see-through::after {
+  content: "";
+  display: block; /* Permet de le traiter comme un bloc */
+  width: 150px; /* Largeur du tiret */
+  height: 2px; /* Épaisseur du tiret */
+  background-color: black; /* Couleur du tiret */
+  margin: 8px auto 0; /* Espacement avec le texte et centrage horizontal */
+}/*# sourceMappingURL=DoubleTitle.css.map */

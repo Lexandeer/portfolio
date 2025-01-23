@@ -1,37 +1,22 @@
-.intro-wrapper {
+.intro {
   background-color: #eeeeed;
-  height: 500px;
-  padding: 60px 0;
-  margin-right: 15%;
+  padding: 80px 0 60px 0;
+  margin-bottom: 60px;
 }
-.intro-wrapper__block {
-  padding: 5% 0;
+.intro__presentation {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.intro-wrapper__block__text {
-  color: black;
+.intro__presentation__block {
+  padding: 8% 0;
+}
+.intro__presentation__block__text {
+  color: #5b5963;
   line-height: 1.6;
-  font-size: 18px;
+  font-size: 24px;
   padding: 0 20%;
-}
-
-.title-wrapper {
-  position: relative;
-}
-.title-wrapper__title {
   text-align: center;
-  font-size: 38px;
-  position: relative;
-  z-index: 2;
-}
-.title-wrapper__title--see-through {
-  width: 100%;
-  color: wheat;
-  text-align: center;
-  font-size: 110px;
-  letter-spacing: 2px;
-  opacity: 0.3;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  font-family: "Poppins", sans-serif;
 }/*# sourceMappingURL=Presentation.css.map */
