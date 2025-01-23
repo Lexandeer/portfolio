@@ -3,14 +3,14 @@ import DoubleTitle from '../../component/DoubleTitle/DoubleTitle';
 
 const Presentation = () => {
   return (
-    <section className="intro-wrapper">
+    <section className="intro">
       <DoubleTitle
         primaryTitle={'Présentation'}
         secondaryTitle={'À propos de moi'}
       />
-      <article>
-        <div className="intro-wrapper__block">
-          <p className="intro-wrapper__block__text">
+      <article className="intro__presentation">
+        <div className="intro__presentation__block">
+          <p className="intro__presentation__block__text">
             <strong>En fin de formation en développement front-end</strong> chez
             OpenClassrooms, j&apos;ai acquis des compétences solides en{' '}
             <strong>React, HTML, CSS</strong> et <strong>JavaScript</strong>.
