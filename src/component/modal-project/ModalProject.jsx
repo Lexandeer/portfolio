@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import './ModalProject.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -12,7 +12,8 @@ const ModalProject = ({
   isVisible,
   src,
   alt,
-  Vsrc,
+  vSrc,
+  tagsData,
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
@@ -20,6 +21,25 @@ const ModalProject = ({
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
   };
+
+  // On utilise le hook useRef pour créer un lien avec la modal
+  const modalRef = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutSideModal = (event) => {
+      //Vérifie si le clic est en dehors de la modal
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        toggleModal();
+      }
+    };
+    //Ajoute un eventListener sur le clic
+    document.addEventListener('mousedown', handleClickOutSideModal);
+
+    //Nettoie l'ecouteur d'évenement
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutSideModal);
+    };
+  }, [toggleModal]);
 
   //Gestion de la classe no-scroll quand une modal est ouverte
   useEffect(() => {
@@ -33,7 +53,7 @@ const ModalProject = ({
   }, [isModalOpen]);
 
   //Validation conditionnelle de props en fonctions de ce qui est passé à ModalProject
-  if (!Vsrc && !url) {
+  if (!vSrc && !url) {
     console.error('erreur :Vous devez définir une url ou un lien de vidéo');
   }
 
@@ -70,7 +90,7 @@ const ModalProject = ({
         </picture>
         {isModalOpen && (
           <div className="modal-overlay">
-            <div className="modal-overlay__modal">
+            <div className="modal-overlay__modal" ref={modalRef}>
               {url ? (
                 <iframe
                   className="modal-overlay__modal__content"
@@ -86,18 +106,18 @@ const ModalProject = ({
                   muted
                   className="modal-overlay__modal__video"
                 >
-                  <source src={Vsrc} type="video/mp4" />
+                  <source src={vSrc} type="video/mp4" />
                   Votre navigateur ne supporte pas la balise vidéo
                 </video>
               )}
-              <button
-                type="button"
-                onClick={toggleModal}
-                className="project__button--close"
-              >
-                <FontAwesomeIcon icon={faXmark} />
-              </button>
             </div>
+            <button
+              type="button"
+              onClick={toggleModal}
+              className="project__button--close"
+            >
+              <FontAwesomeIcon icon={faXmark} />
+            </button>
           </div>
         )}
       </article>
@@ -118,9 +138,9 @@ const ModalProject = ({
         >
           Try It
         </button>
-        <Tags tags={'Front-End'} />
-        <Tags tags={'Scss'} />
-        <Tags tags={'Animation'} />
+        {tagsData.map((tag, index) => (
+          <Tags key={index} label={tag} />
+        ))}
       </div>
     </>
   );
@@ -132,8 +152,9 @@ ModalProject.propTypes = {
   title: PropTypes.string.isRequired,
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
-  Vsrc: PropTypes.string,
+  vSrc: PropTypes.string,
   isVisible: PropTypes.bool.isRequired,
+  tagsData: PropTypes.array.isRequired,
 };
 
 export default ModalProject;

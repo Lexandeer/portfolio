@@ -1,15 +1,15 @@
 import { PropTypes } from 'prop-types';
 import './Tags.scss';
 
-const Tags = ({ tags }) => {
+const Tags = ({ label }) => {
   return (
     <>
-      <span className="tags">{tags}</span>
+      <span className="tags">{label}</span>
     </>
   );
 };
 
 Tags.propTypes = {
-  tags: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
 export default Tags;
