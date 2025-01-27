@@ -5,6 +5,7 @@ const Presentation = () => {
   return (
     <section className="intro">
       <DoubleTitle
+        id={'presentation'}
         primaryTitle={'Présentation'}
         secondaryTitle={'À propos de moi'}
       />
