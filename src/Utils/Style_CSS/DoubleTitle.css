@@ -1,11 +1,12 @@
 @charset "UTF-8";
-.wrapper__title {
+.title {
   text-align: center;
   font-size: 58px;
   position: relative;
   z-index: 2;
 }
-.wrapper__title--see-through {
+
+.title--see-through {
   width: 100%;
   color: wheat;
   text-align: center;
@@ -20,7 +21,7 @@
   z-index: -1;
 }
 
-.wrapper__title--see-through::after {
+.title--see-through::after {
   content: "";
   display: block; /* Permet de le traiter comme un bloc */
   width: 150px; /* Largeur du tiret */

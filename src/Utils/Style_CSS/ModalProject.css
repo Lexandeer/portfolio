@@ -1,7 +1,6 @@
 .project {
   position: relative;
   height: 25%;
-  margin: 10% 15% 0 15%;
 }
 .project__button--open {
   position: absolute;

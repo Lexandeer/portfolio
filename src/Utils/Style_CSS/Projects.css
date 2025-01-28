@@ -1,4 +1,9 @@
-.projects-wrapper {
+.wrapper {
   background-color: white;
-  height: 2800px;
+  margin: 0 15%;
+}
+.wrapper__projects {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }/*# sourceMappingURL=Projects.css.map */
