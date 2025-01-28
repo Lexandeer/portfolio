@@ -4,6 +4,7 @@ import './ModalProject.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import Tags from '../tags/Tags';
+import Loader from '../loader/Loader';
 
 const ModalProject = ({
   url,
@@ -17,6 +18,7 @@ const ModalProject = ({
 }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
+  const [isLoaded, setIsLoaded] = useState(false);
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -39,7 +41,7 @@ const ModalProject = ({
     return () => {
       document.removeEventListener('mousedown', handleClickOutSideModal);
     };
-  }, [toggleModal]);
+  });
 
   //Gestion de la classe no-scroll quand une modal est ouverte
   useEffect(() => {
@@ -58,7 +60,7 @@ const ModalProject = ({
   }
 
   return (
-    <>
+    <div>
       <article className="project">
         <button
           type="button"
@@ -91,6 +93,7 @@ const ModalProject = ({
         {isModalOpen && (
           <div className="modal-overlay">
             <div className="modal-overlay__modal" ref={modalRef}>
+              <Loader isLoaded={isLoaded} />
               {url ? (
                 <iframe
                   className="modal-overlay__modal__content"
@@ -98,6 +101,7 @@ const ModalProject = ({
                   width={1200}
                   height={800}
                   allowFullScreen
+                  onLoad={() => setIsLoaded(true)}
                 ></iframe>
               ) : (
                 <video
@@ -105,6 +109,7 @@ const ModalProject = ({
                   loop
                   muted
                   className="modal-overlay__modal__video"
+                  onLoadStart={() => setIsLoaded(true)}
                 >
                   <source src={vSrc} type="video/mp4" />
                   Votre navigateur ne supporte pas la balise vidéo
@@ -142,7 +147,7 @@ const ModalProject = ({
           <Tags key={index} label={tag} />
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,6 +1,12 @@
 @use '../../assets/variables.scss';
 
-.projects-wrapper {
+.wrapper {
   background-color: variables.$primary-color;
-  height: 2800px;
+  margin: 0px 15%;
+  &__projects {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 100px;
+  }
 }

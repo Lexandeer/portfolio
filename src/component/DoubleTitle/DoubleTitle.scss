@@ -1,6 +1,7 @@
 @use '../../assets/variables';
 
-.wrapper {
+.title-container {
+  padding: 50px 0 150px 0;
   &__title {
     text-align: center;
     font-size: 58px;
@@ -12,8 +13,8 @@
     width: 100%;
     color: variables.$background-color;
     text-align: center;
-    font-size: 110px;
-    letter-spacing: 2px;
+    font-size: 180px;
+    letter-spacing: 4px;
     opacity: 0.3;
     position: absolute;
     font-weight: 700;
@@ -24,7 +25,7 @@
   }
 }
 
-.wrapper__title--see-through::after {
+.title--see-through::after {
   content: '';
   display: block; /* Permet de le traiter comme un bloc */
   width: 150px; /* Largeur du tiret */

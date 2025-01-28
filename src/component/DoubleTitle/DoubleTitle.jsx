@@ -1,12 +1,14 @@
 import { PropTypes } from 'prop-types';
 import './DoubleTitle.scss';
 
-const DoubleTitle = ({ primaryTitle, secondaryTitle, id }) => {
+const DoubleTitle = ({ primaryTitle, secondaryTitle }) => {
   return (
-    <div className="wrapper">
-      <h2 className="wrapper__title" id={id}>
+    <div className="title-container">
+      <h2 className="title-container__title">
         {primaryTitle}
-        <span className="wrapper__title--see-through">{secondaryTitle}</span>
+        <span className="title-container__title--see-through">
+          {secondaryTitle}
+        </span>
       </h2>
     </div>
   );
@@ -15,6 +17,5 @@ const DoubleTitle = ({ primaryTitle, secondaryTitle, id }) => {
 DoubleTitle.propTypes = {
   primaryTitle: PropTypes.string.isRequired,
   secondaryTitle: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
 };
 export default DoubleTitle;

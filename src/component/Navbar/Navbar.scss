@@ -5,9 +5,10 @@
   padding: 20px 0;
   background-color: variables.$primary-color;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1000;
+  width: 100%;
 
   &__container {
     display: flex;
