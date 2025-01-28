@@ -4,6 +4,9 @@
     text-decoration: none;
     color: inherit;
   }
+  section {
+    padding: 120px 0 200px 0;
+  }
 }
 
 body {
