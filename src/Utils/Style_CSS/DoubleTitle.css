@@ -1,17 +1,19 @@
 @charset "UTF-8";
-.title {
+.title-container {
+  padding: 50px 0 150px 0;
+}
+.title-container__title {
   text-align: center;
   font-size: 58px;
   position: relative;
   z-index: 2;
 }
-
-.title--see-through {
+.title-container__title--see-through {
   width: 100%;
   color: wheat;
   text-align: center;
-  font-size: 110px;
-  letter-spacing: 2px;
+  font-size: 180px;
+  letter-spacing: 4px;
   opacity: 0.3;
   position: absolute;
   font-weight: 700;

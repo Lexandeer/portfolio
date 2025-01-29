@@ -1,6 +1,6 @@
 .project {
   position: relative;
-  height: 25%;
+  height: 700px;
 }
 .project__button--open {
   position: absolute;
@@ -75,7 +75,7 @@
   opacity: 0;
 }
 .project__tags-buttton {
-  margin: 20px 10% 0 15%;
+  margin-top: 20px;
 }
 .project__tags-buttton__button {
   cursor: pointer;

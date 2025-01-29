@@ -1,0 +1,14 @@
+.formation-card {
+  width: 250px;
+  height: 100px;
+  background-color: white;
+  border-radius: 20px;
+}
+.formation-card__title {
+  font-size: 28px;
+  color: black;
+}
+.formation-card__year {
+  font-size: 18px;
+  color: #5b5963;
+}/*# sourceMappingURL=FormationCard.css.map */

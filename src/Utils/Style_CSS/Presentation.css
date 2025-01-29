@@ -1,16 +1,12 @@
 .intro {
   background-color: #eeeeed;
-  padding: 80px 0 60px 0;
-  margin-bottom: 60px;
+  margin-top: 60px;
 }
 .intro__presentation {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.intro__presentation__block {
-  padding: 8% 0;
 }
 .intro__presentation__block__text {
   color: #5b5963;

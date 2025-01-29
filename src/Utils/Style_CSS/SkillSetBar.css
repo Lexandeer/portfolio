@@ -1,1 +1,30 @@
-/*# sourceMappingURL=SkillSetBar.css.map */
+.skillsetbar-container {
+  width: 60%;
+}
+.skillsetbar-container__main-title {
+  font-size: 32px;
+  font-weight: 700;
+}
+.skillsetbar-container__skills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  height: 300px;
+  background-color: white;
+  border-radius: 20px;
+}
+.skillsetbar-container__skills__wrapper {
+  width: 10%;
+}
+.skillsetbar-container__skills__wrapper__image {
+  width: 100%;
+  object-fit: cover;
+}
+.skillsetbar-container__skills__wrapper__title {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+}/*# sourceMappingURL=SkillSetBar.css.map */
