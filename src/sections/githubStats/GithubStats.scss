@@ -1,0 +1,68 @@
+@use '../../assets/variables.scss';
+
+.stat-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 100px;
+    width: 70%;
+    background-color: black;
+    height: 700px;
+    border-radius: 20px;
+    padding: 80px 0;
+    margin-top: 60px;
+    transition: box-shadow 0.3s ease;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.6);
+
+    &:hover {
+      box-shadow:
+        inset 0 4px 30px rgba(255, 255, 255, 0.5),
+        0 4px 30px rgba(255, 255, 255, 0.3);
+    }
+    &__title {
+      position: absolute;
+      top: 1%;
+      left: 2%;
+      font-size: 32px;
+      color: variables.$primary-color;
+      padding-left: 15px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        bottom: 0;
+        transform: translateY(-50%);
+        width: 4px;
+        background-color: white;
+      }
+    }
+
+    &__stat {
+      border: 1px solid white;
+      border-radius: 10px;
+      height: 250px;
+      transition:
+        transform 0.3s ease-out,
+        box-shadow 0.3s ease;
+      &:hover {
+        transform: translateY(-15px) scale(1.03);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+      }
+
+      &__img {
+        height: 250px;
+      }
+    }
+  }
+}
