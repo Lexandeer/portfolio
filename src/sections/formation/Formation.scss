@@ -1,0 +1,12 @@
+@use '../../assets/variables.scss';
+
+.formation-container {
+  background-color: variables.$secondary-color;
+  height: 800px;
+
+  &__cards-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
