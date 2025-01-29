@@ -1,0 +1,16 @@
+@use '../../assets/variables.scss';
+
+.formation-card {
+  width: 250px;
+  height: 100px;
+  background-color: variables.$primary-color;
+  border-radius: 20px;
+  &__title {
+    font-size: 28px;
+    color: black;
+  }
+  &__year {
+    font-size: 18px;
+    color: variables.$text-color;
+  }
+}
