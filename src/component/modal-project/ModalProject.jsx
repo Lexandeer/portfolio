@@ -76,9 +76,9 @@ const ModalProject = ({
               isHovered ? 'project__img-container__text-holder--hovered' : ''
             }`}
           >
-            <h4 className="project__img-container__text-holder__title">
+            <h5 className="project__img-container__text-holder__title">
               {title}
-            </h4>
+            </h5>
             <p
               className={`project__img-container__text-holder__text ${
                 isHovered
@@ -109,7 +109,7 @@ const ModalProject = ({
                   loop
                   muted
                   className="modal-overlay__modal__video"
-                  onLoadStart={() => setIsLoaded(true)}
+                  onCanPlayThrough={() => setIsLoaded(true)}
                 >
                   <source src={vSrc} type="video/mp4" />
                   Votre navigateur ne supporte pas la balise vidéo

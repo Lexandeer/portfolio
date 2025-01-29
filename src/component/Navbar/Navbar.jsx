@@ -16,8 +16,12 @@ const Header = () => {
             <li className="navbar__menu-item">
               <a href="#skillset">Compétences</a>
             </li>
-            <li className="navbar__menu-item">GitHub</li>
-            <li className="navbar__menu-item">formations</li>
+            <li className="navbar__menu-item">
+              <a href="#github">GitHub</a>
+            </li>
+            <li className="navbar__menu-item">
+              <a href="#formation">formations</a>
+            </li>
             <li className="navbar__menu-item">Réseaux Sociaux</li>
             <li className="navbar__menu-item">Contact</li>
           </ul>

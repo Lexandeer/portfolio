@@ -20,7 +20,6 @@ const Projects = () => {
           isVisible={true}
           tagsData={['JavaScript', 'Scss']}
         />
-        ;
         <ModalProject
           src="Pictures\ArgentBank-Picture.png"
           vSrc="Videos/ArgentBank-video.mp4"
@@ -30,7 +29,6 @@ const Projects = () => {
           isVisible={false}
           tagsData={['React', 'Redux', 'API', 'Css']}
         />
-        ;
         <ModalProject
           src="Pictures\Kasa-Picture.png"
           vSrc="Videos/Kasa-video.mp4"
