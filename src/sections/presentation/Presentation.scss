@@ -2,19 +2,43 @@
 
 .intro {
   background-color: variables.$secondary-color;
-  margin-top: 60px;
 
   &__presentation {
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    background-color: variables.$background-color;
+    margin: 50px 0 0 200px;
+
+    border-radius: 10px;
+    height: 600px;
+
     &__block {
+      &__profile {
+        position: absolute;
+        top: 8%;
+        left: 3%;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 5px solid #fff;
+
+        &__picture {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
       &__text {
         color: variables.$text-color;
         line-height: 1.6;
-        font-size: 24px;
-        padding: 0 20%;
+        font-size: 28px;
+        padding: 50px 200px 0 350px;
         text-align: center;
         font-family: 'Poppins', sans-serif;
       }

@@ -24,7 +24,7 @@ const Formation = () => {
   }, []);
 
   return (
-    <section className="formation">
+    <section className="formation" id="formation">
       <DoubleTitle
         primaryTitle={'Mon parcours académique et professionnel'}
         secondaryTitle={'Formations'}
