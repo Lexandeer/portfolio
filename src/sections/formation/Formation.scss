@@ -1,12 +1,36 @@
 @use '../../assets/variables.scss';
 
-.formation-container {
+.formation {
   background-color: variables.$secondary-color;
-  height: 800px;
 
-  &__cards-wrapper {
+  &__container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
+    gap: 60px;
+    background-color: wheat;
+    border-radius: 10px;
+    padding: 100px 0 100px 160px;
+    margin: 80px 10% 0 0;
+
+    &__title {
+      font-size: 32px;
+      font-weight: 700;
+      color: black;
+    }
+    &__cards-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      height: 100%;
+    }
+  }
+
+  &__progress-bar {
+    width: 15px;
+    height: 100%;
+    border: 4px solid black;
   }
 }
