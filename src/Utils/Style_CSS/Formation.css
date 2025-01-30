@@ -1,9 +1,31 @@
-.formation-container {
+.formation {
   background-color: #eeeeed;
-  height: 800px;
 }
-.formation-container__cards-wrapper {
+.formation__container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
+  gap: 60px;
+  background-color: wheat;
+  border-radius: 10px;
+  padding: 100px 0 100px 160px;
+  margin: 80px 10% 0 0;
+}
+.formation__container__title {
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+.formation__container__cards-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+.formation__progress-bar {
+  width: 15px;
+  height: 100%;
+  border: 4px solid black;
 }/*# sourceMappingURL=Formation.css.map */

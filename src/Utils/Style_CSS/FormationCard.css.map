@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../../component/formationCard/FormationCard.scss","../../assets/variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA,kBCLc;EDMd;;AACA;EACE;EACA;;AAEF;EACE;EACA,OCVS","file":"FormationCard.css"}
+{"version":3,"sourceRoot":"","sources":["../../component/formationCard/FormationCard.scss","../../assets/variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EACA,kBCLc;EDMd;EACA;;AACA;EACE;EACA;EACA;;AACA;EACE;EACA;EACA;;AAEF;EACE;EACA,OChBO;EDiBP;EACA;;AAEF;EACE;EACA;EACA","file":"FormationCard.css"}
