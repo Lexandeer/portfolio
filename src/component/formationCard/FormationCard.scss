@@ -1,16 +1,30 @@
 @use '../../assets/variables.scss';
 
-.formation-card {
-  width: 250px;
-  height: 100px;
+.container-formation {
+  width: 400px;
+  height: 130px;
   background-color: variables.$primary-color;
   border-radius: 20px;
-  &__title {
-    font-size: 28px;
-    color: black;
-  }
-  &__year {
-    font-size: 18px;
-    color: variables.$text-color;
+  padding-left: 15px;
+  &__card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    &__title {
+      font-size: 32px;
+      color: black;
+      flex-grow: 1;
+    }
+    &__year {
+      font-size: 18px;
+      color: variables.$text-color;
+      display: block;
+      flex-grow: 1;
+    }
+    &__under-title {
+      font-size: 22px;
+      display: block;
+      flex-grow: 1;
+    }
   }
 }
