@@ -1,0 +1,16 @@
+@use '../../assets/variables.scss';
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+
+  &__formulaire {
+    height: 85%;
+    width: 60%;
+    background-color: variables.$secondary-color;
+    border-radius: 20px;
+  }
+}
