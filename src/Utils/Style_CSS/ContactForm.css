@@ -1,0 +1,13 @@
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  width: inherit;
+}
+.contact-form__formulaire {
+  height: 85%;
+  width: 60%;
+  background-color: #eeeeed;
+  border-radius: 20px;
+}/*# sourceMappingURL=ContactForm.css.map */
