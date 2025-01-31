@@ -30,30 +30,47 @@ const Formation = () => {
         secondaryTitle={'Formations'}
       />
       <div className="formation__container">
-        <h4 className="formation__container__title">Dîplome et Formation</h4>
-        <div className="formation__container__cards-wrapper">
-          <FormationCard
-            title={'OpenClassRooms'}
-            year={'2025'}
-            underTitle={'Intégrateur Web'}
-          />
-          <ProgressBar isInView={isInView} isSpecial={true} />
+        <div className="flex-column">
+          <h4 className="formation__container__title">Dîplome et Formation</h4>
+          <div className="formation__container__cards-wrapper">
+            <FormationCard
+              title={'OpenClassRooms'}
+              year={'2025'}
+              underTitle={'Intégrateur Web'}
+            />
+            <ProgressBar isInView={isInView} isSpecial={true} />
+          </div>
+          <div className="formation__container__cards-wrapper">
+            <FormationCard
+              title={'Bac Professionnel'}
+              year={'2022'}
+              underTitle={'TISEC'}
+            />
+            <ProgressBar isInView={isInView} isSpecial={false} />
+          </div>
+          <div className="formation__container__cards-wrapper">
+            <FormationCard
+              title={'Bac Général'}
+              year={'2020'}
+              underTitle={'Economique et Social'}
+            />
+            <ProgressBar isInView={isInView} isSpecial={false} />
+          </div>
         </div>
-        <div className="formation__container__cards-wrapper">
-          <FormationCard
-            title={'Bac Professionnel'}
-            year={'2022'}
-            underTitle={'TISEC'}
+        <div className="formation__container__image">
+          <h4 className="formation__container__title">Mon CV</h4>
+          <img
+            src="/Pictures/CV-Picture.jpg"
+            alt="Image de mon cv"
+            className="formation__container__image__cv"
           />
-          <ProgressBar isInView={isInView} isSpecial={false} />
-        </div>
-        <div className="formation__container__cards-wrapper">
-          <FormationCard
-            title={'Bac Général'}
-            year={'2020'}
-            underTitle={'Economique et Social'}
-          />
-          <ProgressBar isInView={isInView} isSpecial={false} />
+          <a
+            className="formation__container__image__btn"
+            href="/PDF/CV.pdf"
+            download
+          >
+            Télécharger mon CV
+          </a>
         </div>
       </div>
     </section>
