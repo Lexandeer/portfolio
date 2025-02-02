@@ -1,13 +1,83 @@
 .contact-form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: inherit;
-  width: inherit;
+  height: 800px;
+  width: 100%;
+  background-color: white;
 }
-.contact-form__formulaire {
-  height: 85%;
-  width: 60%;
+.contact-form__formulaire-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70%;
+  width: 50%;
   background-color: #eeeeed;
   border-radius: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+}
+.contact-form__formulaire-wrapper h4 {
+  align-self: flex-start;
+  padding-bottom: 50px;
+  font-size: 32px;
+  font-weight: 700;
+  color: black;
+}
+.contact-form__formulaire-wrapper__form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+.contact-form__formulaire-wrapper__form__input {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.contact-form__formulaire-wrapper__form__input label {
+  font-size: 1.3rem;
+  color: black;
+}
+.contact-form__formulaire-wrapper__form__input textarea {
+  height: 120px;
+}
+.contact-form__formulaire-wrapper__form__input input,
+.contact-form__formulaire-wrapper__form__input textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid grey;
+  outline: none;
+  transition: all 0.3s ease;
+  resize: none;
+  overflow-y: auto;
+}
+.contact-form__formulaire-wrapper__form__input input:focus,
+.contact-form__formulaire-wrapper__form__input textarea:focus {
+  border-color: wheat;
+  box-shadow: 0 0 5px white;
+}
+.contact-form__formulaire-wrapper__form__input input::placeholder,
+.contact-form__formulaire-wrapper__form__input textarea::placeholder {
+  color: grey;
+}
+.contact-form__formulaire-wrapper__form button {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: wheat;
+  color: #5b5963;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+.contact-form__formulaire-wrapper__form button:hover {
+  background-color: #efca86;
+}
+.contact-form__formulaire-wrapper__form button:disabled {
+  background-color: grey;
+  cursor: not-allowed;
 }/*# sourceMappingURL=ContactForm.css.map */
