@@ -3,14 +3,90 @@
 .contact-form {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: inherit;
-  width: inherit;
+  height: 800px;
+  width: 100%;
+  background-color: variables.$primary-color;
 
-  &__formulaire {
-    height: 85%;
-    width: 60%;
+  &__formulaire-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    width: 50%;
     background-color: variables.$secondary-color;
     border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    h4 {
+      align-self: flex-start;
+      padding-bottom: 50px;
+      font-size: 32px;
+      font-weight: 700;
+      color: black;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      gap: 20px;
+
+      &__input {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        label {
+          font-size: 1.3rem;
+          color: black;
+        }
+        textarea {
+          height: 120px;
+        }
+        input,
+        textarea {
+          padding: 12px;
+          font-size: 1rem;
+          border-radius: 10px;
+
+          border: 1px solid grey;
+          outline: none;
+          transition: all 0.3s ease;
+          resize: none;
+          overflow-y: auto;
+
+          &:focus {
+            border-color: variables.$background-color;
+            box-shadow: 0 0 5px variables.$primary-color;
+          }
+
+          &::placeholder {
+            color: grey;
+          }
+        }
+      }
+
+      button {
+        padding: 12px 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        background-color: variables.$background-color;
+        color: variables.$text-color;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-transform: uppercase;
+
+        &:hover {
+          background-color: darken(variables.$background-color, 10%);
+        }
+
+        &:disabled {
+          background-color: grey;
+          cursor: not-allowed;
+        }
+      }
+    }
   }
 }
