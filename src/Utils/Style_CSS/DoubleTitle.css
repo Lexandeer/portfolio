@@ -1,6 +1,6 @@
 @charset "UTF-8";
 .title-container {
-  padding: 50px 0 150px 0;
+  padding: 3% 0 10% 0;
 }
 .title-container__title {
   text-align: center;
@@ -23,11 +23,21 @@
   z-index: -1;
 }
 
-.title--see-through::after {
-  content: "";
-  display: block; /* Permet de le traiter comme un bloc */
-  width: 150px; /* Largeur du tiret */
-  height: 2px; /* Épaisseur du tiret */
-  background-color: black; /* Couleur du tiret */
-  margin: 8px auto 0; /* Espacement avec le texte et centrage horizontal */
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .title-container {
+    padding: 3% 3% 5% 3%;
+  }
+  .title-container__title {
+    font-size: 48px;
+  }
+  .title-container__title--see-through {
+    font-size: 120px;
+    letter-spacing: 2px;
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=DoubleTitle.css.map */

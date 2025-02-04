@@ -10,3 +10,23 @@
     margin-top: 100px;
   }
 }
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .wrapper {
+    margin: 0px 10%;
+    &__projects {
+      gap: 150px;
+    }
+  }
+}
+
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
+  .wrapper {
+    &__projects {
+    }
+  }
+}

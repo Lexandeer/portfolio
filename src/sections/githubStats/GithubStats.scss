@@ -49,9 +49,6 @@
     }
 
     &__stat {
-      border: 1px solid white;
-      border-radius: 10px;
-      height: 250px;
       transition:
         transform 0.3s ease-out,
         box-shadow 0.3s ease;
@@ -62,6 +59,50 @@
 
       &__img {
         height: 250px;
+      }
+      &__img-stat {
+        height: 250px;
+      }
+    }
+  }
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .stat-container {
+    &__card {
+      padding-top: 120px;
+      width: 80%;
+      height: 500px;
+      &__title {
+        font-size: 28px;
+      }
+
+      &__stat {
+        &__img {
+          height: 200px;
+        }
+        &__img-stat {
+          width: 600px;
+        }
+      }
+    }
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
+  .stat-container {
+    &__card {
+      &__title {
+      }
+
+      &__stat {
+        &__img {
+        }
+        &__img-stat {
+        }
       }
     }
   }

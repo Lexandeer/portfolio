@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .navbar {
   text-transform: uppercase;
   padding: 20px 0;
@@ -26,4 +27,23 @@
 .navbar__menu-item {
   font-size: 16px;
   font-weight: 600;
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .navbar__container {
+    margin: 0 1%;
+    justify-content: flex-start;
+  }
+  .navbar__title {
+    padding-right: 5%;
+  }
+  .navbar__menu {
+    gap: 20px;
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=Navbar.css.map */

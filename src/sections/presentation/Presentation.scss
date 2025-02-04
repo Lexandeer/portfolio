@@ -2,6 +2,7 @@
 
 .intro {
   background-color: variables.$secondary-color;
+  padding-top: 130px;
 
   &__presentation {
     display: flex;
@@ -9,7 +10,7 @@
     justify-content: center;
     position: relative;
     background-color: variables.$background-color;
-    margin: 50px 0 0 200px;
+    margin: 2% 0 0 13%;
 
     border-radius: 10px;
     height: 600px;
@@ -38,9 +39,46 @@
         color: variables.$text-color;
         line-height: 1.6;
         font-size: 28px;
-        padding: 50px 200px 0 350px;
+        padding: 3% 15% 0 30%;
         text-align: center;
         font-family: 'Poppins', sans-serif;
+      }
+    }
+  }
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .intro {
+    &__presentation {
+      height: 500px;
+      margin: 8% 0 0 8%;
+      &__block {
+        &__profile {
+          width: 150px;
+          height: 150px;
+        }
+        &__text {
+          line-height: 1.4;
+          font-size: 22px;
+          padding: 3% 15% 0 30%;
+        }
+      }
+    }
+  }
+}
+
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
+  .intro {
+    &__presentation {
+      &__block {
+        &__profile {
+        }
+        &__text {
+        }
       }
     }
   }

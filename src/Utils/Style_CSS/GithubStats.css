@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .stat-container {
   display: flex;
   flex-direction: column;
@@ -42,9 +43,6 @@
   background-color: white;
 }
 .stat-container__card__stat {
-  border: 1px solid white;
-  border-radius: 10px;
-  height: 250px;
   transition: transform 0.3s ease-out, box-shadow 0.3s ease;
 }
 .stat-container__card__stat:hover {
@@ -53,4 +51,30 @@
 }
 .stat-container__card__stat__img {
   height: 250px;
+}
+.stat-container__card__stat__img-stat {
+  height: 250px;
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .stat-container__card {
+    padding-top: 120px;
+    width: 80%;
+    height: 500px;
+  }
+  .stat-container__card__title {
+    font-size: 28px;
+  }
+  .stat-container__card__stat__img {
+    height: 200px;
+  }
+  .stat-container__card__stat__img-stat {
+    width: 600px;
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=GithubStats.css.map */

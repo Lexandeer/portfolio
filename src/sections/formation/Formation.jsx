@@ -31,7 +31,7 @@ const Formation = () => {
       />
       <div className="formation__container">
         <div className="flex-column">
-          <h4 className="formation__container__title">Dîplome et Formation</h4>
+          <h4 className="formation__container__title ">Dîplome et Formation</h4>
           <div className="formation__container__cards-wrapper">
             <FormationCard
               title={'OpenClassRooms'}
@@ -58,7 +58,7 @@ const Formation = () => {
           </div>
         </div>
         <div className="formation__container__image">
-          <h4 className="formation__container__title">Mon CV</h4>
+          <h4 className="formation__container__title cv">Mon CV</h4>
           <img
             src="/Pictures/CV-Picture.jpg"
             alt="Image de mon cv"

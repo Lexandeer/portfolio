@@ -1,14 +1,14 @@
 * {
   margin: 0;
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  section {
-    padding: 120px 0 200px 0;
-  }
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  padding: 80px 0 200px 0;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -24,4 +24,12 @@ h3,
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   color: #222;
+}
+
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+
+  section {
+    padding: 80px 0 130px 0;
+  }
 }

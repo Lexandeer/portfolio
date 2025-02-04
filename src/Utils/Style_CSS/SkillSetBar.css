@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .skillsetbar-container {
   width: 60%;
 }
@@ -15,11 +16,13 @@
   border-radius: 20px;
 }
 .skillsetbar-container__skills__wrapper {
-  width: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 .skillsetbar-container__skills__wrapper__image {
-  width: 100%;
-  object-fit: cover;
+  width: 100px;
 }
 .skillsetbar-container__skills__wrapper__title {
   display: block;
@@ -27,4 +30,26 @@
   text-align: center;
   font-size: 20px;
   font-weight: 600;
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .skillsetbar-container {
+    width: 80%;
+  }
+  .skillsetbar-container__skills {
+    gap: 10%;
+    height: 200px;
+  }
+  .skillsetbar-container__skills__wrapper__image {
+    width: 80px;
+  }
+  .skillsetbar-container__skills__wrapper__title {
+    font-size: 16px;
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=SkillSetBar.css.map */

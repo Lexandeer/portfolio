@@ -1,9 +1,9 @@
 @use '../../assets/variables.scss';
+@use 'sass:color';
 
 .contact-form {
   display: flex;
   justify-content: center;
-  height: 800px;
   width: 100%;
   background-color: variables.$primary-color;
 
@@ -37,7 +37,7 @@
         gap: 8px;
 
         label {
-          font-size: 1.3rem;
+          font-size: 20px;
           color: black;
         }
         textarea {
@@ -46,7 +46,7 @@
         input,
         textarea {
           padding: 12px;
-          font-size: 1rem;
+          font-size: 16px;
           border-radius: 10px;
 
           border: 1px solid grey;
@@ -68,7 +68,7 @@
 
       button {
         padding: 12px 20px;
-        font-size: 1.2rem;
+        font-size: 18px;
         font-weight: 600;
         background-color: variables.$background-color;
         color: variables.$text-color;
@@ -79,7 +79,10 @@
         text-transform: uppercase;
 
         &:hover {
-          background-color: darken(variables.$background-color, 10%);
+          background-color: color.adjust(
+            variables.$background-color,
+            $lightness: -10%
+          );
         }
 
         &:disabled {
@@ -87,6 +90,25 @@
           cursor: not-allowed;
         }
       }
+    }
+  }
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .contact-form {
+    margin-top: 80px;
+    &__formulaire-wrapper {
+      width: 60%;
+    }
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
+  .contact-form {
+    &__formulaire-wrapper {
     }
   }
 }

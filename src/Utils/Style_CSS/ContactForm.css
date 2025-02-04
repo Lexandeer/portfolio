@@ -1,7 +1,7 @@
+@charset "UTF-8";
 .contact-form {
   display: flex;
   justify-content: center;
-  height: 800px;
   width: 100%;
   background-color: white;
 }
@@ -36,7 +36,7 @@
   gap: 8px;
 }
 .contact-form__formulaire-wrapper__form__input label {
-  font-size: 1.3rem;
+  font-size: 20px;
   color: black;
 }
 .contact-form__formulaire-wrapper__form__input textarea {
@@ -45,7 +45,7 @@
 .contact-form__formulaire-wrapper__form__input input,
 .contact-form__formulaire-wrapper__form__input textarea {
   padding: 12px;
-  font-size: 1rem;
+  font-size: 16px;
   border-radius: 10px;
   border: 1px solid grey;
   outline: none;
@@ -64,7 +64,7 @@
 }
 .contact-form__formulaire-wrapper__form button {
   padding: 12px 20px;
-  font-size: 1.2rem;
+  font-size: 18px;
   font-weight: 600;
   background-color: wheat;
   color: #5b5963;
@@ -80,4 +80,19 @@
 .contact-form__formulaire-wrapper__form button:disabled {
   background-color: grey;
   cursor: not-allowed;
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .contact-form {
+    margin-top: 80px;
+  }
+  .contact-form__formulaire-wrapper {
+    width: 60%;
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=ContactForm.css.map */

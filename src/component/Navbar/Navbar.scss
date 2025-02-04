@@ -31,3 +31,33 @@
     }
   }
 }
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .navbar {
+    &__container {
+      margin: 0 1%;
+      justify-content: flex-start;
+    }
+    &__title {
+      padding-right: 5%;
+    }
+    &__menu {
+      gap: 20px;
+    }
+  }
+}
+
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
+  .navbar {
+    &__container {
+    }
+    &__title {
+    }
+    &__menu {
+    }
+  }
+}

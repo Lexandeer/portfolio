@@ -20,8 +20,8 @@
 
   &__button--close {
     position: absolute;
-    top: 10%;
-    right: 20%;
+    top: 4%;
+    right: 15%;
     cursor: pointer;
     background: black;
     color: variables.$primary-color;
@@ -122,8 +122,8 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     animation: fadeIn 0.3s ease-out;
-    width: 60%;
-    height: 70%;
+    width: 70%;
+    height: 80%;
 
     &__content {
       border: none;
@@ -154,5 +154,67 @@
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .project {
+    height: 500px;
+
+    &__button--close {
+      top: 4%;
+      right: 10%;
+    }
+    &__img-container {
+      &__text-holder {
+        &__title {
+          font-size: 34px;
+          padding: 0 0 20px 40px;
+        }
+        &__text {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .modal-overlay {
+    &__modal {
+      width: 80%;
+      height: 70%;
+    }
+  }
+}
+
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
+  .project {
+    height: 500px;
+
+    &__button--close {
+      top: 4%;
+      right: 10%;
+    }
+    &__img-container {
+      &__text-holder {
+        &__title {
+          font-size: 34px;
+          padding: 0 0 20px 40px;
+        }
+        &__text {
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  .modal-overlay {
+    &__modal {
+      width: 80%;
+      height: 70%;
+    }
   }
 }

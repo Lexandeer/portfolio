@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .formation {
   background-color: #eeeeed;
 }
@@ -66,4 +67,26 @@
   flex-direction: column;
   gap: 60px;
   height: 100%;
+}
+
+/* Pour tablette */
+@media (max-width: 1400px) {
+  /* styles pour la tablette */
+  .formation__container {
+    flex-direction: column;
+    gap: 80px;
+  }
+  .formation__container__image__cv {
+    display: none;
+  }
+  .formation__container__image__btn {
+    width: 100%;
+  }
+  .cv {
+    display: none;
+  }
+}
+/* Pour téléphone */
+@media (max-width: 768px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=Formation.css.map */
