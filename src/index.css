@@ -33,3 +33,10 @@ h3,
     padding: 80px 0 130px 0;
   }
 }
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  section {
+    padding: 80px 0 100px 0;
+  }
+}

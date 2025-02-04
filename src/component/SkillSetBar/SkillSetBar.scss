@@ -55,15 +55,48 @@
 }
 
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
 
   .skillsetbar-container {
+    &__main-title {
+      font-size: 26px;
+    }
     &__skills {
       &__wrapper {
         &__image {
+          width: 60px;
         }
         &__title {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+/* Pour téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+
+  .skillsetbar-container {
+    &__main-title {
+      font-size: 22px;
+    }
+    &__skills {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 700px;
+      width: 80%;
+
+      &__wrapper {
+        &__image {
+          width: 80px;
+        }
+        &__title {
+          font-size: 16px;
         }
       }
     }

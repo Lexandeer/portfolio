@@ -26,3 +26,26 @@
     }
   }
 }
+
+/* Pour téléphone */
+@media (max-width: 830px) {
+  /* styles pour le téléphone */
+  .footer {
+    height: 200px;
+  }
+}
+
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .footer {
+    &__container {
+      &__links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+      }
+    }
+  }
+}

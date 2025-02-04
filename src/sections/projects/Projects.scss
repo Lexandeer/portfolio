@@ -23,10 +23,11 @@
 }
 
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
   .wrapper {
     &__projects {
+      gap: 110px;
     }
   }
 }

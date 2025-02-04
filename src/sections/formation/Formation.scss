@@ -97,18 +97,30 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
   .formation {
     &__container {
-      &__image {
-        &__cv {
-        }
-        &__btn {
-        }
+      &__title {
+        font-size: 28px;
       }
     }
   }
-  .cv {
+}
+
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .formation {
+    &__container {
+      padding: 0 0 0 5%;
+      height: 900px;
+      &__title {
+        font-size: 24px;
+      }
+    }
+  }
+  .flex-column {
+    width: 100%;
   }
 }

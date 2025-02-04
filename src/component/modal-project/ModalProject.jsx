@@ -19,6 +19,7 @@ const ModalProject = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
+  const [videoSrc, setVideoSrc] = useState(vSrc); //State qui change le lien de la vidéo en fonction de la taille d'écran utilisé
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
@@ -127,25 +128,30 @@ const ModalProject = ({
         )}
       </article>
       <div className="project__tags-buttton">
-        <button className="project__tags-buttton__button ">
-          <a
-            className="github-button"
-            href="https://github.com/Lexandeer/Site_Ohmyfood"
-            target="_blank"
+        <div>
+          <button className="project__tags-buttton__button ">
+            <a
+              className="github-button"
+              href="https://github.com/Lexandeer/Site_Ohmyfood"
+              target="_blank"
+            >
+              GitHub
+            </a>
+          </button>
+          <button
+            type="button"
+            className={`project__tags-buttton__button ${isVisible ? '' : 'transparent'}`}
+            onClick={toggleModal}
           >
-            GitHub
-          </a>
-        </button>
-        <button
-          type="button"
-          className={`project__tags-buttton__button ${isVisible ? '' : 'transparent'}`}
-          onClick={toggleModal}
-        >
-          Try It
-        </button>
-        {tagsData.map((tag, index) => (
-          <Tags key={index} label={tag} />
-        ))}
+            Try It
+          </button>
+        </div>
+
+        <div className="project__tags-buttton__container">
+          {tagsData.map((tag, index) => (
+            <Tags key={index} label={tag} />
+          ))}
+        </div>
       </div>
     </div>
   );

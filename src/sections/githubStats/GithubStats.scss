@@ -91,19 +91,31 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
   .stat-container {
     &__card {
+      height: 200px;
       &__title {
+        font-size: 22px;
       }
 
       &__stat {
         &__img {
+          padding-top: 70px;
         }
         &__img-stat {
+          display: none;
         }
       }
     }
+  }
+}
+
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .stat-container {
+    display: none;
   }
 }

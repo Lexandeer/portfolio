@@ -105,10 +105,24 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
   .contact-form {
     &__formulaire-wrapper {
+      h4 {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+/* Pour téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .contact-form {
+    margin-top: 80px;
+    &__formulaire-wrapper {
+      width: 80%;
     }
   }
 }

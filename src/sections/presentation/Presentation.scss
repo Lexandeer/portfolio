@@ -70,14 +70,40 @@
 }
 
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
   .intro {
     &__presentation {
       &__block {
         &__profile {
+          width: 120px;
+          height: 120px;
         }
         &__text {
+          line-height: 1.4;
+          font-size: 18px;
+          padding: 0% 10% 0 30%;
+        }
+      }
+    }
+  }
+}
+
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .intro {
+    &__presentation {
+      margin: 15% 0 0 10%;
+      height: 450px;
+      &__block {
+        &__profile {
+          display: none;
+        }
+        &__text {
+          line-height: 1.4;
+          font-size: 16px;
+          padding: 0 5% 0 5%;
         }
       }
     }
