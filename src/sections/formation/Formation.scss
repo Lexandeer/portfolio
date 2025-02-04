@@ -6,11 +6,12 @@
   &__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20%;
     background-color: wheat;
     border-radius: 10px;
     height: 800px;
-    padding: 80px 160px 100px 160px;
+    padding: 5% 10% 5% 10%;
     margin: 80px 10% 0 0;
 
     &__image {
@@ -101,6 +102,7 @@
   /* styles pour le téléphone */
   .formation {
     &__container {
+      height: 900px;
       &__title {
         font-size: 28px;
       }
