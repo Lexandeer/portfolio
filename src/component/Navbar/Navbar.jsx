@@ -1,28 +1,55 @@
 import './Navbar.scss';
+import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 
-const Header = () => {
+const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
     <nav className="navbar">
       <div className="navbar__container">
+        {/* Bouton hamburger, visible uniquement en mobile */}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className={`navbar__toggle ${isOpen ? 'open' : ''}`}
+          aria-label="Menu"
+        >
+          <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
+        </button>
         <h1 className="navbar__title">Portfolio</h1>
-        <ul className="navbar__menu">
+
+        {/* Menu, toujours horizontal sauf en mobile */}
+        <ul className={`navbar__menu ${isOpen ? 'active' : ''}`}>
           <li className="navbar__menu-item">
-            <a href="#presentation">Présentation</a>
+            <a href="#presentation" onClick={() => setIsOpen(false)}>
+              Présentation
+            </a>
           </li>
           <li className="navbar__menu-item">
-            <a href="#projects">Projets</a>
+            <a href="#projects" onClick={() => setIsOpen(false)}>
+              Projets
+            </a>
           </li>
           <li className="navbar__menu-item">
-            <a href="#skillset">Compétences</a>
+            <a href="#skillset" onClick={() => setIsOpen(false)}>
+              Compétences
+            </a>
           </li>
           <li className="navbar__menu-item">
-            <a href="#github">GitHub</a>
+            <a href="#github" onClick={() => setIsOpen(false)}>
+              GitHub
+            </a>
           </li>
           <li className="navbar__menu-item">
-            <a href="#formation">formations</a>
+            <a href="#formation" onClick={() => setIsOpen(false)}>
+              Formations
+            </a>
           </li>
           <li className="navbar__menu-item">
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={() => setIsOpen(false)}>
+              Contact
+            </a>
           </li>
         </ul>
       </div>
@@ -30,4 +57,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
