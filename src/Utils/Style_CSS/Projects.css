@@ -21,6 +21,9 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
+  .wrapper__projects {
+    gap: 110px;
+  }
 }/*# sourceMappingURL=Projects.css.map */

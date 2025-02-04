@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .progress-bar {
   position: relative;
   width: 100%;
@@ -30,4 +31,12 @@
 }
 .progress-bar--special.progress-bar--active .progress-bar__filler {
   width: 85%;
+}
+
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .progress-bar {
+    width: 80%;
+  }
 }/*# sourceMappingURL=ProgressBar.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .container-formation {
   width: 400px;
   height: 130px;
@@ -25,4 +26,41 @@
   font-size: 22px;
   display: block;
   flex-grow: 1;
+}
+
+/* Pour téléphone */
+@media (max-width: 830px) {
+  /* styles pour le téléphone */
+  .container-formation {
+    width: 400px;
+    height: 130px;
+    padding: 5px 0 5px 15px;
+  }
+  .container-formation__card__title {
+    font-size: 22px;
+  }
+  .container-formation__card__year {
+    font-size: 18px;
+  }
+  .container-formation__card__under-title {
+    font-size: 16px;
+  }
+}
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .container-formation {
+    width: 80%;
+    height: 130px;
+    padding: 5px 0 5px 15px;
+  }
+  .container-formation__card__title {
+    font-size: 22px;
+  }
+  .container-formation__card__year {
+    font-size: 18px;
+  }
+  .container-formation__card__under-title {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=FormationCard.css.map */

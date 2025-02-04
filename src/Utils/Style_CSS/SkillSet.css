@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .skillset-wrapper {
   background-color: #eeeeed;
 }
@@ -8,4 +9,9 @@
   flex-direction: column;
   align-items: center;
   gap: 100px;
+}
+
+/* Pour téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=SkillSet.css.map */

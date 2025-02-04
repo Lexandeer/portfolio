@@ -5,11 +5,12 @@
 .formation__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 20%;
   background-color: wheat;
   border-radius: 10px;
   height: 800px;
-  padding: 80px 160px 100px 160px;
+  padding: 5% 10% 5% 10%;
   margin: 80px 10% 0 0;
 }
 .formation__container__image {
@@ -87,6 +88,26 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
+  .formation__container {
+    height: 900px;
+  }
+  .formation__container__title {
+    font-size: 28px;
+  }
+}
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .formation__container {
+    padding: 0 0 0 5%;
+    height: 900px;
+  }
+  .formation__container__title {
+    font-size: 24px;
+  }
+  .flex-column {
+    width: 100%;
+  }
 }/*# sourceMappingURL=Formation.css.map */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .tags {
   user-select: none;
   padding: 8px 30px;
@@ -11,4 +12,20 @@
 }
 .tags:hover {
   box-shadow: 0 3px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Pour téléphone */
+@media (max-width: 830px) {
+  /* styles pour le téléphone */
+  .tags {
+    padding: 3px 30px;
+    margin-top: 15px;
+  }
+}
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .tags {
+    font-size: 16px;
+  }
 }/*# sourceMappingURL=Tags.css.map */

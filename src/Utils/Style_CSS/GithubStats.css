@@ -75,6 +75,25 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
+  .stat-container__card {
+    height: 200px;
+  }
+  .stat-container__card__title {
+    font-size: 22px;
+  }
+  .stat-container__card__stat__img {
+    padding-top: 70px;
+  }
+  .stat-container__card__stat__img-stat {
+    display: none;
+  }
+}
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .stat-container {
+    display: none;
+  }
 }/*# sourceMappingURL=GithubStats.css.map */

@@ -58,6 +58,31 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
+  .intro__presentation__block__profile {
+    width: 120px;
+    height: 120px;
+  }
+  .intro__presentation__block__text {
+    line-height: 1.4;
+    font-size: 18px;
+    padding: 0% 10% 0 30%;
+  }
+}
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .intro__presentation {
+    margin: 15% 0 0 10%;
+    height: 450px;
+  }
+  .intro__presentation__block__profile {
+    display: none;
+  }
+  .intro__presentation__block__text {
+    line-height: 1.4;
+    font-size: 16px;
+    padding: 0 5% 0 5%;
+  }
 }/*# sourceMappingURL=Presentation.css.map */

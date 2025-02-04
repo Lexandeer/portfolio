@@ -77,6 +77,8 @@
 }
 .project__tags-buttton {
   margin-top: 20px;
+  display: flex;
+  align-items: center;
 }
 .project__tags-buttton__button {
   cursor: pointer;
@@ -89,7 +91,7 @@
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.2s ease;
   color: white;
-  margin-right: 20px;
+  margin: 0 20px 0 0;
 }
 .project__tags-buttton__button:hover {
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
@@ -168,7 +170,7 @@
   }
 }
 /* Pour téléphone */
-@media (max-width: 768px) {
+@media (max-width: 830px) {
   /* styles pour le téléphone */
   .project {
     height: 500px;
@@ -178,14 +180,38 @@
     right: 10%;
   }
   .project__img-container__text-holder__title {
-    font-size: 34px;
+    font-size: 28px;
     padding: 0 0 20px 40px;
   }
   .project__img-container__text-holder__text {
-    font-size: 22px;
+    font-size: 18px;
+    padding-right: 5%;
   }
-  .modal-overlay__modal {
+  .project__tags-buttton {
+    padding-top: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project__tags-buttton__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .project__tags-buttton__button {
+    margin-bottom: 10px;
+  }
+  .project .modal-overlay__modal {
     width: 80%;
     height: 70%;
   }
+}
+/* Pour téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .project__tags-buttton__button {
+    font-size: 16px;
+  }
+}
+/* Pour petit téléphone */
+@media (max-width: 830px) {
+  /* styles pour le téléphone */
 }/*# sourceMappingURL=ModalProject.css.map */

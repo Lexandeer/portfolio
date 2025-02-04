@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .footer {
   background-color: #eeeeed;
   height: 250px;
@@ -20,4 +21,22 @@
 .footer__container__links {
   display: flex;
   gap: 25px;
+}
+
+/* Pour téléphone */
+@media (max-width: 830px) {
+  /* styles pour le téléphone */
+  .footer {
+    height: 200px;
+  }
+}
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .footer__container__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
 }/*# sourceMappingURL=Footer.css.map */
