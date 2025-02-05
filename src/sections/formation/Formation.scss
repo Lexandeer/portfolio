@@ -114,6 +114,7 @@
 @media (max-width: 530px) {
   /* styles pour le téléphone */
   .formation {
+    background-color: variables.$primary-color;
     &__container {
       padding: 0 0 0 5%;
       height: 900px;

@@ -3,7 +3,6 @@
 .footer {
   background-color: variables.$secondary-color;
   height: 250px;
-  margin-top: 80px;
 
   &__container {
     height: 50%;
@@ -39,6 +38,7 @@
 @media (max-width: 530px) {
   /* styles pour le téléphone */
   .footer {
+    background-color: variables.$primary-color;
     &__container {
       &__links {
         display: flex;
