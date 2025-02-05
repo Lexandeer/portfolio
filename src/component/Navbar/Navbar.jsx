@@ -1,10 +1,27 @@
 import './Navbar.scss';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [isShown, setIsShown] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (
+      location.pathname === '/mentions-legales' ||
+      location.pathname === '/politique-confidentialite'
+    ) {
+      setIsShown(true);
+    } else location.pathname === '/portfolio';
+    {
+      setIsShown(false);
+    }
+  }, [location.pathname]);
 
   return (
     <nav className="navbar">
@@ -17,10 +34,13 @@ const Navbar = () => {
         >
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
-        <h1 className="navbar__title">Portfolio</h1>
-
+        <Link to={'/portfolio'}>
+          <h1 className="navbar__title">Portfolio</h1>
+        </Link>
         {/* Menu, toujours horizontal sauf en mobile */}
-        <ul className={`navbar__menu ${isOpen ? 'active' : ''}`}>
+        <ul
+          className={`navbar__menu ${isOpen ? 'active' : ''} ${isShown ? 'hide' : ''}`}
+        >
           <li className="navbar__menu-item">
             <a href="#presentation" onClick={() => setIsOpen(false)}>
               Présentation
