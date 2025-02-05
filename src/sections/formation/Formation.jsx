@@ -60,7 +60,7 @@ const Formation = () => {
         <div className="formation__container__image">
           <h4 className="formation__container__title cv">Mon CV</h4>
           <img
-            src="/Pictures/CV-Picture.jpg"
+            src="/Pictures/CV-Picture.png"
             alt="Image de mon cv"
             className="formation__container__image__cv"
           />
