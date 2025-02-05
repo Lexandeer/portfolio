@@ -34,9 +34,11 @@ const Navbar = () => {
         >
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
-        <Link to={'/portfolio'}>
-          <h1 className="navbar__title">Portfolio</h1>
-        </Link>
+        <div className="navbar__title">
+          <Link to={'/portfolio'}>
+            <h1>Portfolio</h1>
+          </Link>
+        </div>
         {/* Menu, toujours horizontal sauf en mobile */}
         <ul
           className={`navbar__menu ${isOpen ? 'active' : ''} ${isShown ? 'hide' : ''}`}
