@@ -14,12 +14,12 @@ import ScrollToTopButton from './component/scrollToTopButton/ScrollToTopButton';
 
 function App() {
   return (
-    <Router basename="/portfolio">
+    <Router>
       <Header />
       <Routes>
         {/* Page principale */}
         <Route
-          path="/"
+          path="/portfolio/"
           element={
             <main>
               <Presentation />
