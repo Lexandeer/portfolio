@@ -19,7 +19,7 @@ function App() {
       <Routes>
         {/* Page principale */}
         <Route
-          path="/portfolio/"
+          path="/"
           element={
             <main>
               <Presentation />
