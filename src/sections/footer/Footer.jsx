@@ -24,6 +24,7 @@ const Footer = () => {
             Politique de confidentialité
           </Link>
         </div>
+        <p>© 2025 Alexandre MIQUEL, Tous droits réservés.</p>
       </div>
     </footer>
   );
