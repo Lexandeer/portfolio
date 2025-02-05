@@ -13,3 +13,11 @@
     padding: 80px 0 0 0;
   }
 }
+
+/* Pour petit téléphone */
+@media (max-width: 530px) {
+  /* styles pour le téléphone */
+  .contact {
+    background-color: variables.$secondary-color;
+  }
+}
