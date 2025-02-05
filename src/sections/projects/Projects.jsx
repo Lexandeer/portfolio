@@ -24,7 +24,7 @@ const Projects = () => {
       <div className="wrapper__projects">
         <ModalProject
           url="https://lexandeer.github.io/Site_Ohmyfood/"
-          src="Pictures\OhMyFood-Picture.png"
+          src="/portfolio/Pictures\OhMyFood-Picture.png"
           title="OhMyFood"
           alt="Preview du site OhMyFood "
           description="Un site mobile-first permettant aux clients de composer leur menu gastronomique à l'avance pour réduire les temps d'attente au restaurant"
@@ -32,7 +32,7 @@ const Projects = () => {
           tagsData={['JavaScript', 'Scss']}
         />
         <ModalProject
-          src="Pictures\ArgentBank-Picture.png"
+          src="/portfolio/Pictures\ArgentBank-Picture.png"
           vSrc={
             isMobile
               ? 'Videos/Argent-bank-mobile-video.mp4'
@@ -45,7 +45,7 @@ const Projects = () => {
           tagsData={['React', 'Redux', 'API', 'Css']}
         />
         <ModalProject
-          src="Pictures\Kasa-Picture.png"
+          src="/portfolio/Pictures\Kasa-Picture.png"
           vSrc={
             isMobile ? 'Videos/Kasa-mobile-video.mp4' : 'Videos/Kasa-video.mp4'
           }

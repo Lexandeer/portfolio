@@ -12,7 +12,7 @@ const Presentation = () => {
         <div className="intro__presentation__block">
           <div className="intro__presentation__block__profile">
             <img
-              src="Pictures/Profile-picture.png"
+              src="/portfolio/Pictures/Profile-picture.png"
               alt="Photo de profile"
               className="intro__presentation__block__profile__picture"
             />
