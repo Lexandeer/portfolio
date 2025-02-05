@@ -14,7 +14,7 @@ import ScrollToTopButton from './component/scrollToTopButton/ScrollToTopButton';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <Header />
       <Routes>
         {/* Page principale */}
