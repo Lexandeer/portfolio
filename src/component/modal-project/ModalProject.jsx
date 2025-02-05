@@ -1,5 +1,5 @@
 import { PropTypes } from 'prop-types';
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState, useRef, useCallback } from 'react';
 import './ModalProject.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
@@ -19,14 +19,14 @@ const ModalProject = ({
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
-  const [videoSrc, setVideoSrc] = useState(vSrc); //State qui change le lien de la vidéo en fonction de la taille d'écran utilisé
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
 
   // On utilise le hook useRef pour créer un lien avec la modal
   const modalRef = useRef(null);
+
+  // Utilisation de useCallback pour mémoriser la fonction toggleModal et éviter une loop de re-render
+  const toggleModal = useCallback(() => {
+    setIsModalOpen((prev) => !prev);
+  }, []);
 
   useEffect(() => {
     const handleClickOutSideModal = (event) => {
@@ -42,7 +42,7 @@ const ModalProject = ({
     return () => {
       document.removeEventListener('mousedown', handleClickOutSideModal);
     };
-  });
+  }, [toggleModal]);
 
   //Gestion de la classe no-scroll quand une modal est ouverte
   useEffect(() => {

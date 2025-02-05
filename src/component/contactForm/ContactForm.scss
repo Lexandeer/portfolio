@@ -6,6 +6,7 @@
   justify-content: center;
   width: 100%;
   background-color: variables.$primary-color;
+  padding-bottom: 80px;
 
   &__formulaire-wrapper {
     display: flex;
@@ -54,6 +55,7 @@
           transition: all 0.3s ease;
           resize: none;
           overflow-y: auto;
+          background-color: variables.$secondary-color;
 
           &:focus {
             border-color: variables.$background-color;
@@ -120,9 +122,11 @@
 @media (max-width: 530px) {
   /* styles pour le téléphone */
   .contact-form {
+    background-color: variables.$secondary-color;
     margin-top: 80px;
     &__formulaire-wrapper {
       width: 80%;
+      background-color: variables.$primary-color;
     }
   }
 }
