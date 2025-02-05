@@ -1,7 +1,11 @@
 * {
   margin: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
-
+html {
+  height: 100%;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -15,15 +19,10 @@ body {
   color: #333;
   line-height: 1.6;
   background-color: white;
+  height: 100%;
 }
-
-h1,
-h2,
-h3,
-.title-wrapper__title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
-  color: #222;
+#root {
+  height: 100%;
 }
 
 @media (max-width: 1400px) {

@@ -53,6 +53,11 @@
     }
   }
 }
+
+.hide {
+  display: none;
+}
+
 /* Version tablette */
 @media (max-width: 1400px) {
   .navbar {

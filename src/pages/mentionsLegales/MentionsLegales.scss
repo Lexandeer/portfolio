@@ -1,18 +1,26 @@
 @use '../../assets/variables.scss';
 
+.legal-wrapper {
+  display: flex;
+  height: 78%;
+  margin: 0 0% 0 10%;
+}
 .legal-container {
-  max-width: 800px;
-  margin: 100px auto;
   padding: 20px;
   font-family: Arial, sans-serif;
-}
-
-.legal-container h1 {
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-
-.legal-container p {
-  font-size: 16px;
-  line-height: 1.5;
+  & h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  & h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  & p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  & div {
+    margin-bottom: 10px;
+  }
 }

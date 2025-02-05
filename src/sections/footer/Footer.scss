@@ -5,14 +5,17 @@
   height: 250px;
 
   &__container {
-    height: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
-    gap: 40px;
 
+    padding-top: 50px;
+    gap: 30px;
+    & p {
+      font-weight: 700;
+    }
     &__icones {
       display: flex;
       gap: 5px;
@@ -21,7 +24,13 @@
 
     &__links {
       display: flex;
-      gap: 25px;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      & a:hover {
+        text-decoration: underline;
+      }
     }
   }
 }
@@ -40,6 +49,9 @@
   .footer {
     background-color: variables.$primary-color;
     &__container {
+      & p {
+        font-size: 12px;
+      }
       &__links {
         display: flex;
         flex-direction: column;

@@ -1,1 +1,26 @@
 @use '../../assets/variables.scss';
+
+.confidentialite-wrapper {
+  display: flex;
+  height: 78%;
+  margin: 0 0% 0 10%;
+}
+.confidentialite-container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  & h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  & h3 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  & p {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+  & div {
+    margin-bottom: 10px;
+  }
+}
