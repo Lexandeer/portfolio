@@ -19,8 +19,8 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer__container__links">
-          <Link to="/mentions-legales">Mentions légales</Link>
-          <Link to="/politique-confidentialite">
+          <Link to="/portfolio/mentions-legales">Mentions légales</Link>
+          <Link to="/portfolio/politique-confidentialite">
             Politique de confidentialité
           </Link>
         </div>

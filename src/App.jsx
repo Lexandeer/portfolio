@@ -33,9 +33,12 @@ function App() {
         />
 
         {/* Pages légales */}
-        <Route path="/mentions-legales" element={<MentionsLegales />} />
         <Route
-          path="/politique-confidentialite"
+          path="/portfolio/mentions-legales"
+          element={<MentionsLegales />}
+        />
+        <Route
+          path="/portfolio/politique-confidentialite"
           element={<PolitiqueConfidentialite />}
         />
       </Routes>

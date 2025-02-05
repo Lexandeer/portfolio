@@ -7,19 +7,18 @@ import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isShown, setIsShown] = useState(false);
+  const [isHide, setIsHide] = useState(false);
 
   const location = useLocation();
 
   useEffect(() => {
     if (
-      location.pathname === '/mentions-legales' ||
-      location.pathname === '/politique-confidentialite'
+      location.pathname === '/portfolio/mentions-legales' ||
+      location.pathname === '/portfolio/politique-confidentialite'
     ) {
-      setIsShown(true);
-    } else location.pathname === '/portfolio';
-    {
-      setIsShown(false);
+      setIsHide(true);
+    } else if (location.pathname === '/portfolio') {
+      setIsHide(false);
     }
   }, [location.pathname]);
 
@@ -41,7 +40,7 @@ const Navbar = () => {
         </div>
         {/* Menu, toujours horizontal sauf en mobile */}
         <ul
-          className={`navbar__menu ${isOpen ? 'active' : ''} ${isShown ? 'hide' : ''}`}
+          className={`navbar__menu ${isOpen ? 'active' : ''} ${isHide ? 'hide' : ''}`}
         >
           <li className="navbar__menu-item">
             <a href="#presentation" onClick={() => setIsOpen(false)}>
