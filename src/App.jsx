@@ -1,3 +1,4 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Presentation from './sections/presentation/Presentation';
 import Projects from './sections/projects/Projects';
@@ -7,19 +8,40 @@ import Formation from './sections/formation/Formation';
 import Header from './sections/header/Header';
 import Footer from './sections/footer/Footer';
 import Contact from './sections/contact/Contact';
+import MentionsLegales from './pages/mentionsLegales/MentionsLegales';
+import PolitiqueConfidentialite from './pages/politiqueConfidentialite/PolitiqueConfidentialite';
+import ScrollToTopButton from './component/scrollToTopButton/ScrollToTopButton';
 
 function App() {
   return (
-    <>
+    <Router>
       <Header />
-      <Presentation />
-      <Projects />
-      <SkillSet />
-      <GithubStats />
-      <Formation />
-      <Contact />
+      <Routes>
+        {/* Page principale */}
+        <Route
+          path="/"
+          element={
+            <main>
+              <Presentation />
+              <Projects />
+              <SkillSet />
+              <GithubStats />
+              <Formation />
+              <Contact />
+            </main>
+          }
+        />
+
+        {/* Pages légales */}
+        <Route path="/mentions-legales" element={<MentionsLegales />} />
+        <Route
+          path="/politique-confidentialite"
+          element={<PolitiqueConfidentialite />}
+        />
+      </Routes>
       <Footer />
-    </>
+      <ScrollToTopButton />
+    </Router>
   );
 }
 
