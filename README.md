@@ -1,4 +1,3 @@
-# Portfolio
 # Mon Portfolio de Développeur Web
 
 Bienvenue sur mon portfolio en ligne ! Je suis un développeur web passionné, spécialisé dans la création de sites web modernes et interactifs. Ce portfolio présente mes compétences, mes projets réalisés au cours de ma formation OpenClassRooms et mes projets personnels.
