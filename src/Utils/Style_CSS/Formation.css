@@ -100,6 +100,9 @@
 /* Pour petit téléphone */
 @media (max-width: 530px) {
   /* styles pour le téléphone */
+  .formation {
+    background-color: white;
+  }
   .formation__container {
     padding: 0 0 0 5%;
     height: 900px;
