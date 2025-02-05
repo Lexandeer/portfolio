@@ -74,7 +74,7 @@
     &__card {
       padding-top: 120px;
       width: 80%;
-      height: 500px;
+
       &__title {
         font-size: 28px;
       }
@@ -95,14 +95,19 @@
   /* styles pour le téléphone */
   .stat-container {
     &__card {
-      height: 200px;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      gap: 0;
       &__title {
         font-size: 22px;
       }
 
       &__stat {
         &__img {
-          padding-top: 70px;
+          height: 200px;
         }
         &__img-stat {
           display: none;
