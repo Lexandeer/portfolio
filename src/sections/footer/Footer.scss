@@ -2,7 +2,6 @@
 
 .footer {
   background-color: variables.$secondary-color;
-  height: 250px;
 
   &__container {
     height: 100%;
@@ -32,14 +31,6 @@
         text-decoration: underline;
       }
     }
-  }
-}
-
-/* Pour téléphone */
-@media (max-width: 830px) {
-  /* styles pour le téléphone */
-  .footer {
-    height: 200px;
   }
 }
 
