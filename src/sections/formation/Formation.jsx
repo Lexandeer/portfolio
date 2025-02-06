@@ -66,7 +66,7 @@ const Formation = () => {
           />
           <a
             className="formation__container__image__btn"
-            href="/PDF/CV.pdf"
+            href="/portfolio/PDF/CV.pdf"
             download
           >
             Télécharger mon CV

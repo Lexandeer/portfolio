@@ -8,6 +8,7 @@ import { useLocation } from 'react-router-dom';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isHide, setIsHide] = useState(false);
+  const [isAnimated, setIsAnimated] = useState(false);
 
   const location = useLocation();
 
@@ -17,8 +18,10 @@ const Navbar = () => {
       location.pathname === '/portfolio/politique-confidentialite'
     ) {
       setIsHide(true);
+      setIsAnimated(true);
     } else if (location.pathname === '/portfolio') {
       setIsHide(false);
+      setIsAnimated(false);
     }
   }, [location.pathname]);
 
@@ -33,7 +36,7 @@ const Navbar = () => {
         >
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
-        <div className="navbar__title">
+        <div className={`navbar__title ${isAnimated ? 'animation-title' : ''}`}>
           <Link to={'/portfolio'}>
             <h1>Portfolio</h1>
           </Link>

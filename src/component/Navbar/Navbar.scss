@@ -58,6 +58,11 @@
   display: none;
 }
 
+.animation-title {
+  animation: pulse 1s ease-in-out 3;
+  padding: 0 !important;
+}
+
 /* Version tablette */
 @media (max-width: 1400px) {
   .navbar {
@@ -107,5 +112,16 @@
       opacity: 1;
       visibility: visible;
     }
+  }
+}
+
+@keyframes pulse {
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(1.1);
   }
 }

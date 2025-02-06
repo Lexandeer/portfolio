@@ -24,7 +24,11 @@ const Projects = () => {
       <div className="wrapper__projects">
         <ModalProject
           url="https://lexandeer.github.io/Site_Ohmyfood/"
-          src="/portfolio/Pictures\OhMyFood-Picture.png"
+          src={
+            isMobile
+              ? '/portfolio/Pictures/OhMyFood-mobile-picture.jpg'
+              : '/portfolio/Pictures/OhMyFood-Picture.png'
+          }
           title="OhMyFood"
           alt="Preview du site OhMyFood "
           description="Un site mobile-first permettant aux clients de composer leur menu gastronomique à l'avance pour réduire les temps d'attente au restaurant"
@@ -32,11 +36,15 @@ const Projects = () => {
           tagsData={['JavaScript', 'Scss']}
         />
         <ModalProject
-          src="/portfolio/Pictures\ArgentBank-Picture.png"
+          src={
+            isMobile
+              ? '/portfolio/Pictures/ArgentBank-mobile-picture.png'
+              : '/portfolio/Pictures/ArgentBank-Picture.png'
+          }
           vSrc={
             isMobile
-              ? 'Videos/Argent-bank-mobile-video.mp4'
-              : 'Videos/ArgentBank-video.mp4'
+              ? '/portfolio/Videos/Argent-bank-mobile-video.mp4'
+              : '/portfolio/Videos/ArgentBank-video.mp4'
           }
           alt="Preview du site ArgentBank"
           title="ArgentBank"
@@ -45,9 +53,15 @@ const Projects = () => {
           tagsData={['React', 'Redux', 'API', 'Css']}
         />
         <ModalProject
-          src="/portfolio/Pictures\Kasa-Picture.png"
+          src={
+            isMobile
+              ? '/portfolio/Pictures/Kasa-mobile-picture.png'
+              : '/portfolio/Pictures/Kasa-Picture.png'
+          }
           vSrc={
-            isMobile ? 'Videos/Kasa-mobile-video.mp4' : 'Videos/Kasa-video.mp4'
+            isMobile
+              ? '/portfolio/Videos/Kasa-mobile-video.mp4'
+              : '/portfolio/Videos/Kasa-video.mp4'
           }
           alt="Preview du site Kasa"
           title="Kasa"
