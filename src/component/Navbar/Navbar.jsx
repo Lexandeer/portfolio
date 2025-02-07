@@ -31,7 +31,7 @@ const Navbar = () => {
         {/* Bouton hamburger, visible uniquement en mobile */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className={`navbar__toggle ${isOpen ? 'open' : ''}`}
+          className={`navbar__toggle ${isOpen ? 'open' : ''} ${isHide ? 'hide' : ''}`}
           aria-label="Menu"
         >
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />

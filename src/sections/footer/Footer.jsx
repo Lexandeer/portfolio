@@ -1,11 +1,27 @@
 import './Footer.scss';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { useEffect, useState } from 'react';
 
 const Footer = () => {
+  const [isGrey, setIsGrey] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    if (
+      location.pathname === '/portfolio/mentions-legales' ||
+      location.pathname === '/portfolio/politique-confidentialite'
+    ) {
+      setIsGrey(true);
+    } else if (location.pathname === '/portfolio') {
+      setIsGrey(false);
+    }
+  }, [location.pathname]);
+
   return (
-    <footer className="footer">
+    <footer className={`footer ${isGrey ? 'grey' : ''}`}>
       <div className="footer__container">
         <div className="footer__container__icones">
           <a
