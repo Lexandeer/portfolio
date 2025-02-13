@@ -1,13 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Presentation from './sections/presentation/Presentation';
-import Projects from './sections/projects/Projects';
-import SkillSet from './sections/skill-set/SkillSet';
-import GithubStats from './sections/githubStats/GithubStats';
-import Formation from './sections/formation/Formation';
 import Header from './sections/header/Header';
 import Footer from './sections/footer/Footer';
-import Contact from './sections/contact/Contact';
+import Portfolio from './pages/portfolio/portfolio';
 import MentionsLegales from './pages/mentionsLegales/MentionsLegales';
 import PolitiqueConfidentialite from './pages/politiqueConfidentialite/PolitiqueConfidentialite';
 import ScrollToTopButton from './component/scrollToTopButton/ScrollToTopButton';
@@ -18,19 +13,7 @@ function App() {
       <Header />
       <Routes>
         {/* Page principale */}
-        <Route
-          path="/portfolio"
-          element={
-            <main>
-              <Presentation />
-              <Projects />
-              <SkillSet />
-              <GithubStats />
-              <Formation />
-              <Contact />
-            </main>
-          }
-        />
+        <Route path="/portfolio" element={<Portfolio />} />
 
         {/* Pages légales */}
         <Route
