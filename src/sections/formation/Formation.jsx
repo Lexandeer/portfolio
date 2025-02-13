@@ -8,19 +8,19 @@ const Formation = () => {
   const [isInView, setIsInView] = useState(false);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(
+    const observer = new IntersectionObserver( //intersectionObserver est une api native de JavaScript.
       (entries) => {
         entries.forEach((entry) => {
-          setIsInView(entry.isIntersecting);
+          setIsInView(entry.isIntersecting); //Set l'état avec la valeur true ou false en fonction de si .formation est visible ou non.
         });
       },
-      { threshold: 0.5 }
+      { threshold: 0.5 } //Quand au moins 50% de l'élément est visible, entry.isIntersecting passe à true
     );
 
-    const section = document.querySelector('.formation');
-    if (section) observer.observe(section);
+    const section = document.querySelector('.formation'); //On selectionne la section Formation
+    if (section) observer.observe(section); //Si elle existe, on l'observe
 
-    return () => observer.disconnect();
+    return () => observer.disconnect(); // nettoyage à la suppression du composant.
   }, []);
 
   return (

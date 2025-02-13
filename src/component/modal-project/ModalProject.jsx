@@ -20,13 +20,24 @@ const ModalProject = ({
   const [isHovered, setIsHovered] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  // On utilise le hook useRef pour créer un lien avec la modal
-  const modalRef = useRef(null);
-
   // Utilisation de useCallback pour mémoriser la fonction toggleModal et éviter une loop de re-render
   const toggleModal = useCallback(() => {
     setIsModalOpen((prev) => !prev);
   }, []);
+
+  //Gestion de la classe no-scroll quand une modal est ouverte
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.classList.add('no-scroll');
+    } else {
+      document.body.classList.remove('no-scroll');
+    }
+    //Nettoyage
+    return () => document.body.classList.remove('no-scroll');
+  }, [isModalOpen]);
+
+  // On utilise le hook useRef pour créer un lien avec la modal
+  const modalRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutSideModal = (event) => {
@@ -43,17 +54,6 @@ const ModalProject = ({
       document.removeEventListener('mousedown', handleClickOutSideModal);
     };
   }, [toggleModal]);
-
-  //Gestion de la classe no-scroll quand une modal est ouverte
-  useEffect(() => {
-    if (isModalOpen) {
-      document.body.classList.add('no-scroll');
-    } else {
-      document.body.classList.remove('no-scroll');
-    }
-    //Nettoyage
-    return () => document.body.classList.remove('no-scroll');
-  }, [isModalOpen]);
 
   //Validation conditionnelle de props en fonctions de ce qui est passé à ModalProject
   if (!vSrc && !url) {

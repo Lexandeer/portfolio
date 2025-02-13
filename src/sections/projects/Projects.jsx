@@ -4,17 +4,19 @@ import ModalProject from '../../component/modal-project/ModalProject';
 import DoubleTitle from '../../component/DoubleTitle/DoubleTitle';
 
 const Projects = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 530); //State qui change le lien de la vidéo en fonction de la taille d'écran utilisé
+  //State qui change le lien de la vidéo en fonction de la taille d'écran utilisé.
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 530); //Si window.innerWidth renvoie une valeur plus petite que 530px alors isMobile == true.
 
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 530);
+      setIsMobile(window.innerWidth <= 530); // Grâce au useEffect, on renvoie la nouvelle valeur de la taille de l'écran si il y a eu un changement.
     };
 
-    window.addEventListener('resize', handleResize); // On ajoute un écouteur d'évenement sur le changement de taille de l'écran
+    window.addEventListener('resize', handleResize); // On ajoute un écouteur d'évenement sur le changement de taille de l'écran.
 
-    return () => window.removeEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize); //On nettoie l'écouteur d'évènement.
   }, []);
+
   return (
     <section className="wrapper" id="projects">
       <DoubleTitle

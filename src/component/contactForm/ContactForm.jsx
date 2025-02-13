@@ -30,6 +30,7 @@ const ContactForm = () => {
               placeholder="john@doe.com"
               required
             ></input>
+            {/* Composant fournit par la bibliothèque formspree pour afficher les erreurs de validation de champs du formulaire. */}
             <ValidationError
               prefix="Email"
               field="email"

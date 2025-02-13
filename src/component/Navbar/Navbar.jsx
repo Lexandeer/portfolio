@@ -6,9 +6,10 @@ import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
   const [isHide, setIsHide] = useState(false);
   const [isAnimated, setIsAnimated] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const location = useLocation();
 
