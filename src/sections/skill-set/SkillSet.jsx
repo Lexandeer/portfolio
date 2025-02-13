@@ -5,24 +5,19 @@ import './SkillSet.scss';
 const SkillSet = () => {
   const SkillSetBar1 = [
     {
-      src: '/portfolio/Logos/logo-js.png',
-      alt: 'Logo JavaScript',
-      skillTitle: 'JavaScript',
-    },
-    {
       src: '/portfolio/Logos/logo-react.png',
       alt: 'Logo React',
       skillTitle: 'React.js',
     },
     {
-      src: '/portfolio/Logos/logo-html.png',
-      alt: 'Logo HTML 5',
-      skillTitle: 'HTML 5',
+      src: '/portfolio/Logos/logo-redux.png',
+      alt: 'Logo Redux',
+      skillTitle: 'Redux',
     },
     {
-      src: '/portfolio/Logos/logo-css.png',
-      alt: 'Logo CSS 3',
-      skillTitle: 'CSS 3',
+      src: '/portfolio/Logos/logo-js.png',
+      alt: 'Logo JavaScript',
+      skillTitle: 'JavaScript',
     },
   ];
   const SkillSetBar2 = [
